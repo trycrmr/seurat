@@ -1,4 +1,6 @@
-# SEURAT
+# SEURAT 
+( pronounced "sue-rot" after this artist and his work https://en.wikipedia.org/wiki/Georges_Seurat )
+
 Artistically depicting network traffic.
 
 No working releases yet.
