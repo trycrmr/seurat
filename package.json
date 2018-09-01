@@ -1,0 +1,23 @@
+{
+  "name": "seurat",
+  "version": "0.0.1",
+  "description": "Artistically depicting network traffic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trycrmr/seurat.git"
+  },
+  "author": "trycrmr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trycrmr/seurat/issues"
+  },
+  "homepage": "https://github.com/trycrmr/seurat#readme",
+  "devDependencies": {
+    "electron": "^2.0.8"
+  }
+}
