@@ -1,3 +1,23 @@
+# SEURAT
+
+( pronounced "sue-rot" after this artist and his work https://en.wikipedia.org/wiki/Georges_Seurat )
+
+Artistically depicting network traffic.
+
+No working releases yet.
+
+## CONTRIBUTE
+
+1. Install the randpkt utility. This might require building wireshark from source (https://www.wireshark.org/docs/wsug_html_chunked/ChBuildInstallUnixBuild.html). This utility is used to generate fake network traffic to use to iterate over developing visualizations stored as pcap files.
+2. Install the [tshark utility](https://www.wireshark.org/docs/man-pages/tshark.html). This will be used to convert pcap output and files to json.
+3. Run the following command (well, technically two commands) to create a pcap file and convert it to json: `randpkt -r ./tmp/fake-packets.pcap && tshark -r ./tmp/fake-packets.pcap -T json >> ./tmp/fake-packets-$(date +%s).json` This is how we will generate some fake network packets to visualize. Note that the goal with Seurat is to visualize live network traffic, however, these instructions presume capturing packets on your network for development purposes would be inappropriate.
+
+...to be continued.
+
+## INSTALL
+
+Built using electron-react-boilerplate
+
 <div align="center">
 <br>
 <img src="https://user-images.githubusercontent.com/12294525/44203609-77d50800-a147-11e8-98f0-f2403527abdc.png" width="600px" />
@@ -29,6 +49,7 @@ A boilerplate for Scalable Cross-Platform Desktop Apps based on  <a href="http:/
 <a href="http://eslint.org/"><img src="./internals/img/eslint-padded-90.png" /></a>
 <a href="https://facebook.github.io/jest/"><img src="./internals/img/jest-padded-90.png" /></a>
 <a href="https://yarnpkg.com/"><img src="./internals/img/yarn-padded-90.png" /></a>
+
 </div>
 
 <hr>
@@ -43,11 +64,13 @@ A boilerplate for Scalable Cross-Platform Desktop Apps based on  <a href="http:/
 [![Join the chat at https://gitter.im/electron-react-boilerplate/Lobby](https://badges.gitter.im/electron-react-boilerplate/Lobby.svg)](https://gitter.im/electron-react-boilerplate/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![OpenCollective](https://opencollective.com/electron-react-boilerplate/backers/badge.svg)](#backers)
 [![OpenCollective](https://opencollective.com/electron-react-boilerplate/sponsors/badge.svg)](#sponsors)
+
 </div>
 
 <div align="center">
 
 ![Electron Boilerplate Demo](https://cloud.githubusercontent.com/assets/3382565/10557547/b1f07a4e-74e3-11e5-8d27-79ab6947d429.gif)
+
 </div>
 
 ## Install
